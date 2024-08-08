@@ -132,9 +132,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_ADCEx_Calibration_Start(&hadc1);
   volatile unsigned int ADC_value = 0;
-  const int MAX_ADC_VALUE = 3650;
+  const int MAX_ADC_VALUE = 4096;
+  const float MAX_ALLOW_ADC_VOLTAGE = 3.0;
+  const float MAX_ALLOW_ADC_VALUE = (MAX_ADC_VALUE / 3.3) * MAX_ALLOW_ADC_VOLTAGE;
   const int VU_COUNT = 10;
-  const int STEP_SIZE = MAX_ADC_VALUE / VU_COUNT;
+  const int STEP_SIZE = MAX_ALLOW_ADC_VALUE / VU_COUNT;
 
   HAL_ADC_Start_DMA(&hadc1, &ADC_value, 1);
 
