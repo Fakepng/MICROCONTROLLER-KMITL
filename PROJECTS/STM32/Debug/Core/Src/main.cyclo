@@ -1,0 +1,15 @@
+../Core/Src/main.c:75:6:uart_debug	1
+../Core/Src/main.c:84:5:main	1
+../Core/Src/main.c:138:6:SystemClock_Config	3
+../Core/Src/main.c:185:13:MX_SPI1_Init	2
+../Core/Src/main.c:224:13:MX_USART2_UART_Init	5
+../Core/Src/main.c:272:13:MX_GPIO_Init	1
+../Core/Src/main.c:322:6:HAL_GPIO_EXTI_Falling_Callback	2
+../Core/Src/main.c:332:6:process_uart	7
+../Core/Src/main.c:369:6:HAL_UART_RxCpltCallback	9
+../Core/Src/main.c:399:10:crc16_modbus	4
+../Core/Src/main.c:417:5:validate_crc16_modbus	2
+../Core/Src/main.c:432:6:spi_transmit	1
+../Core/Src/main.c:440:6:printb	2
+../Core/Src/main.c:450:6:HAL_SPI_RxCpltCallback	5
+../Core/Src/main.c:485:6:Error_Handler	1
